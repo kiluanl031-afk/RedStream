@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RedStream - Premium 4K IPTV</title>
-    <meta name="description" content="Regardez plus de 20 000 chaînes, films et séries en 4K. Abonnement IPTV Premium.">
+    
+    <title>RedStream - Meilleur Abonnement IPTV 4K 2024 | Stable & Anti-Coupure</title>
+    <meta name="description" content="Abonnement IPTV Premium N°1 en France. +20 000 chaînes 4K/FHD, Films & Séries (Netflix, Amazon, Disney+). Test 24h disponible. Support 7j/7.">
+    <meta name="keywords" content="IPTV France, Abonnement IPTV, IPTV 4K, IPTV Smarters, Smart TV, M3U, Boitier Android, IPTV Pas cher, RedStream, Streaming Foot, IPTV Maroc">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://redstream.com" />
+    
+    <meta property="og:title" content="RedStream - L'IPTV Premium sans coupure" />
+    <meta property="og:description" content="Accédez à tout le sport, films et séries en 4K pour seulement 49€/an. Installation immédiate." />
+    <meta property="og:image" content="https://img.freepik.com/premium-photo/watching-tv-home-entertainment-concept_431161-16348.jpg" />
+    <meta property="og:url" content="https://redstream.com" />
+    <meta property="og:type" content="website" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Abonnement RedStream IPTV Premium",
+      "image": "https://redstream.com/logo.png",
+      "description": "Accès illimité à +20000 chaînes et VOD en 4K.",
+      "brand": {
+        "@type": "Brand",
+        "name": "RedStream"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://redstream.com",
+        "priceCurrency": "EUR",
+        "price": "49.00",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1250"
+      }
+    }
+    </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -22,8 +59,8 @@
             colors: {
               brand: {
                 red: '#E50914', /* Netflix Red */
-                dark: '#141414',
-                gray: '#2F2F2F'
+                dark: '#0f0f0f',
+                card: '#1a1a1a'
               }
             }
           }
@@ -37,50 +74,41 @@
         color: #fff;
       }
       
-      /* Glass Effect */
       .glass-panel {
-        background: rgba(40, 40, 40, 0.4);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(30, 30, 30, 0.6);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
       }
-
-      /* Logo Brands Styling */
-      .brand-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      
+      /* Animation douce au survol des prix */
+      .pricing-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
-      .brand-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        border-color: rgba(255,255,255,0.3);
-      }
-
-      /* Gradient Text */
-      .text-gradient {
-        background: linear-gradient(to right, #fff, #b3b3b3);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      .pricing-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(229, 9, 20, 0.5);
       }
     </style>
 </head>
-<body class="antialiased bg-[#0f0f0f]">
+<body class="antialiased bg-brand-dark overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 bg-[#0f0f0f]/90 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+    <nav class="fixed w-full z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0 font-extrabold text-2xl tracking-tighter cursor-pointer">
+                <div class="flex-shrink-0 font-black text-2xl tracking-tighter cursor-pointer">
                     <span class="text-white">RED</span><span class="text-brand-red">STREAM</span>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-medium">Accueil</a>
-                        <a href="#content" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-medium">Contenu</a>
-                        <a href="#pricing" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-medium">Abonnements</a>
-                        <a href="#faq" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-medium">Aide</a>
+                        <a href="#home" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-bold">Accueil</a>
+                        <a href="#features" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-bold">Avantages</a>
+                        <a href="#pricing" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-bold">Tarifs</a>
+                        <a href="#faq" class="hover:text-brand-red transition-colors px-3 py-2 text-sm font-bold">Aide</a>
                     </div>
                 </div>
                 <div>
-                    <a href="#pricing" class="bg-brand-red hover:bg-red-700 text-white px-6 py-2 rounded-full font-bold text-sm transition-all shadow-lg shadow-red-900/20">
-                        S'abonner
+                    <a href="#pricing" class="bg-brand-red hover:bg-red-700 text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-[0_0_20px_rgba(229,9,20,0.3)] hover:shadow-[0_0_30px_rgba(229,9,20,0.5)]">
+                        Voir les offres
                     </a>
                 </div>
             </div>
@@ -88,61 +116,76 @@
     </nav>
 
     <div id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="absolute inset-0 bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/eeb03fc9-99bf-440f-9d45-f09277c6f055/FR-en-20240101-popsignuptwoweeks-perspective_alpha_website_large.jpg')] bg-cover bg-center opacity-20 mask-image-gradient"></div>
-        <div class="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-[#0f0f0f]/80 to-transparent"></div>
+        <div class="absolute inset-0 bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/eeb03fc9-99bf-440f-9d45-f09277c6f055/FR-en-20240101-popsignuptwoweeks-perspective_alpha_website_large.jpg')] bg-cover bg-center opacity-10"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-transparent"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-            <span class="inline-block py-1 px-3 rounded-full bg-white/10 border border-white/10 text-brand-red text-sm font-bold mb-6 backdrop-blur-sm">
-                NOUVEAU : SERVEURS 2024 ULTRA-RAPIDES 🚀
-            </span>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-tight">
-                Tout votre divertissement<br/>
-                <span class="text-brand-red">sans limites.</span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-900/30 border border-red-500/30 text-red-400 text-xs font-bold mb-8 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span> Serveurs Premium 2024
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6 leading-tight text-white">
+                La télévision du futur<br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-red to-red-400">à prix imbattable.</span>
             </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-300 mb-10 leading-relaxed">
-                Accédez à Netflix, Bein Sports, Shahid VIP et plus de 20 000 chaînes en direct. 
-                Qualité 4K, sans coupure, sur tous vos écrans.
+            
+            <p class="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-10 leading-relaxed font-light">
+                +20 000 Chaînes TV, Films et Séries en 4K/FHD. <br class="hidden md:block">
+                Compatible Smart TV, Android, Apple & PC. Sans engagement.
             </p>
-            <div class="flex justify-center gap-4 flex-col sm:flex-row">
-                <a href="#pricing" class="px-8 py-4 bg-brand-red hover:bg-red-700 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-red-600/30">
-                    <i class="fas fa-play"></i> Commencer maintenant
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pricing" class="px-8 py-4 bg-brand-red hover:bg-red-700 rounded-xl font-bold text-lg text-white transition-all shadow-lg shadow-red-900/40 transform hover:scale-105">
+                    <i class="fas fa-rocket mr-2"></i> Choisir mon abonnement
                 </a>
-                <a href="https://wa.me/212694843943" target="_blank" class="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/10 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 backdrop-blur-md">
-                    <i class="fab fa-whatsapp"></i> Discuter sur WhatsApp
+                <a href="https://wa.me/212694843943" target="_blank" class="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl font-bold text-lg text-white transition-all backdrop-blur-sm">
+                    <i class="fab fa-whatsapp mr-2 text-green-400"></i> Test Gratuit
                 </a>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-white/5 flex flex-wrap justify-center gap-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <i class="fab fa-android text-4xl"></i>
+                <i class="fab fa-apple text-4xl"></i>
+                <i class="fas fa-tv text-4xl"></i>
+                <i class="fab fa-windows text-4xl"></i>
             </div>
         </div>
     </div>
 
-    <div id="content" class="py-16 bg-[#0f0f0f]">
+    <div id="features" class="py-20 bg-brand-dark relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-white mb-4">Tout ce que vous aimez au même endroit</h2>
-                <p class="text-gray-400">Plus besoin de payer plusieurs abonnements. Tout est inclus.</p>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Pourquoi choisir RedStream ?</h2>
+                <p class="text-gray-400">La meilleure technologie au service de votre divertissement.</p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="brand-card glass-panel rounded-2xl p-8 flex flex-col items-center justify-center text-center group cursor-default h-48">
-                    <div class="text-5xl text-[#E50914] mb-4 transform group-hover:scale-110 transition-transform">
-                        <i class="fab fa-neos"></i>etflix
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/5 transition-colors">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-red to-red-800 rounded-lg flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-red-900/20">
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <p class="text-sm text-gray-400">Films & Séries</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Anti-Coupure 2.0</h3>
+                    <p class="text-gray-400 leading-relaxed">Nos serveurs puissants garantissent une stabilité à 99.9% même lors des grands matchs de football.</p>
                 </div>
-
-                <div class="brand-card glass-panel rounded-2xl p-8 flex flex-col items-center justify-center text-center group cursor-default h-48">
-                    <div class="text-4xl font-bold text-white mb-4 transform group-hover:scale-110 transition-transform">
-                        beIN <span class="bg-white text-purple-800 px-1 rounded">SPORTS</span>
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/5 transition-colors">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-red to-red-800 rounded-lg flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-red-900/20">
+                        <i class="fas fa-video"></i>
                     </div>
-                    <p class="text-sm text-gray-400">Ligues Majeures & F1</p>
+                    <h3 class="text-xl font-bold text-white mb-3">4K & Full HD</h3>
+                    <p class="text-gray-400 leading-relaxed">Profitez d'une qualité d'image cristalline. Compatible avec les dernières TV 4K HDR.</p>
                 </div>
-
-                <div class="brand-card glass-panel rounded-2xl p-8 flex flex-col items-center justify-center text-center group cursor-default h-48">
-                    <div class="text-5xl text-gray-200 mb-4 transform group-hover:scale-110 transition-transform">
-                        <i class="fab fa-apple"></i> <span class="text-3xl font-bold">tv+</span>
+                <div class="glass-panel p-8 rounded-2xl hover:bg-white/5 transition-colors">
+                    <div class="w-14 h-14 bg-gradient-to-br from-brand-red to-red-800 rounded-lg flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-red-900/20">
+                        <i class="fas fa-headset"></i>
                     </div>
-                    <p class="text-sm text-gray-400">Exclusivités Apple</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Support VIP</h3>
+                    <p class="text-gray-400 leading-relaxed">Une équipe dédiée disponible sur WhatsApp pour vous aider à l'installation et au renouvellement.</p>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                 <div class="brand-card glass-panel rounded-2xl p-8 flex flex-col items-center justify-center text-center group cursor-default h-48">
-                    <div class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-4 transform group-hover:scale-110 transition-transform">
-                        SHAHID <span class="text-xs border border-blue-400 px-1 rounded align-top text-blue-400">
+    <div id="pricing" class="py-24 bg-[#0a0a0a] relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-white mb
